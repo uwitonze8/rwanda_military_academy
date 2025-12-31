@@ -70,14 +70,14 @@ export default function Navbar() {
           {/* Desktop Auth Buttons - Right */}
           <div className="hidden md:flex items-center space-x-3">
             <Link
-              href="/login"
+              href="/all/auth/login"
               className="flex items-center gap-2 border-2 border-golden-yellow text-white px-5 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-golden-yellow hover:text-army-green-dark hover:scale-105 active:scale-95"
             >
               <i className="bi bi-box-arrow-in-right"></i>
               Login
             </Link>
             <Link
-              href="/signup"
+              href="/all/auth/signup"
               className="flex items-center gap-2 bg-golden-yellow text-army-green-dark border-2 border-golden-yellow px-5 py-2 rounded-md text-sm font-semibold transition-all duration-300 shadow-md hover:bg-transparent hover:text-white hover:shadow-xl hover:scale-105 active:scale-95"
             >
               <i className="bi bi-person-plus"></i>
@@ -141,7 +141,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="/login"
+              href="/all/auth/login"
               className="flex items-center justify-center gap-2 border-2 border-golden-yellow text-white px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:bg-golden-yellow hover:text-army-green-dark active:scale-95"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -149,7 +149,7 @@ export default function Navbar() {
               Login
             </Link>
             <Link
-              href="/signup"
+              href="/all/auth/signup"
               className="flex items-center justify-center gap-2 bg-golden-yellow text-army-green-dark border-2 border-golden-yellow px-3 py-2 rounded-md text-base font-semibold transition-all duration-300 hover:bg-transparent hover:text-white hover:shadow-lg active:scale-95"
               onClick={() => setIsMenuOpen(false)}
             >
