@@ -27,7 +27,7 @@ export default function Navbar() {
                 height={50}
                 className="w-12 h-12 object-contain"
               />
-              <span className="text-white font-bold text-xl">Rwanda Military Medical</span>
+              <span className="text-white font-bold text-xl">RMA Medical</span>
             </Link>
           </div>
 

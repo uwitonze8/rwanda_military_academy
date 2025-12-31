@@ -87,7 +87,7 @@ export default function SignupPage() {
               className="w-9 h-9 object-contain"
             />
             <span className="text-army-green-dark font-bold text-sm sm:text-base">
-              Rwanda Military Medical
+              RMA Medical
             </span>
           </div>
         </div>

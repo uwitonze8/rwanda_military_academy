@@ -24,7 +24,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Rwanda Military Medical",
+  title: "RMA Medical",
   description: "Smart, Fast, and Secure Healthcare for Rwanda Military Academy",
 };
 

@@ -68,7 +68,7 @@ export default function LoginPage() {
                 className="w-9 h-9 object-contain"
               />
               <span className="text-army-green-dark font-bold text-sm">
-                Rwanda Military Medical
+                RMA Medical
               </span>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function LoginPage() {
                 className="w-10 h-10 object-contain"
               />
               <span className="text-army-green-dark font-bold text-base">
-                Rwanda Military Medical
+                RMA Medical
               </span>
             </div>
 
