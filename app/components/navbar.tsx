@@ -45,24 +45,14 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="/all/about"
                 className={`text-sm font-medium transition-colors ${
-                  pathname === "/about"
+                  pathname === "/all/about"
                     ? "text-golden-yellow"
                     : "text-white hover:text-golden-yellow"
                 }`}
               >
                 About
-              </Link>
-              <Link
-                href="/contact"
-                className={`text-sm font-medium transition-colors ${
-                  pathname === "/contact"
-                    ? "text-golden-yellow"
-                    : "text-white hover:text-golden-yellow"
-                }`}
-              >
-                Contact
               </Link>
             </div>
           </div>
@@ -119,26 +109,15 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/all/about"
               className={`block px-3 py-2 text-base font-medium ${
-                pathname === "/about"
+                pathname === "/all/about"
                   ? "text-golden-yellow"
                   : "text-white hover:text-golden-yellow"
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </Link>
-            <Link
-              href="/contact"
-              className={`block px-3 py-2 text-base font-medium ${
-                pathname === "/contact"
-                  ? "text-golden-yellow"
-                  : "text-white hover:text-golden-yellow"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
             </Link>
             <Link
               href="/all/auth/login"
