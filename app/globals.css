@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --army-green: #4A5D23;
+  --army-green-dark: #3A4A1C;
+  --army-green-light: #5C7A2E;
+  --deep-blue: #1B3A5F;
+  --deep-blue-dark: #142D4A;
+  --deep-blue-light: #2A4D7A;
+  --golden-yellow: #D4A017;
+  --golden-yellow-dark: #B8890F;
+  --golden-yellow-light: #E8B84A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-oswald);
+  --font-display: var(--font-roboto-slab);
+  --color-army-green: var(--army-green);
+  --color-army-green-dark: var(--army-green-dark);
+  --color-army-green-light: var(--army-green-light);
+  --color-deep-blue: var(--deep-blue);
+  --color-deep-blue-dark: var(--deep-blue-dark);
+  --color-deep-blue-light: var(--deep-blue-light);
+  --color-golden-yellow: var(--golden-yellow);
+  --color-golden-yellow-dark: var(--golden-yellow-dark);
+  --color-golden-yellow-light: var(--golden-yellow-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Font utility classes */
+.font-heading {
+  font-family: var(--font-oswald), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-roboto-slab), serif;
+}
+
+.font-body {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* Remove Bootstrap default link underlines and colors */
+a {
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none !important;
+}
+
+/* Nav link colors - only for navigation links, not auth buttons */
+nav a.text-white:not([href="/login"]):not([href="/signup"]) {
+  color: white !important;
+}
+
+nav a.text-white:not([href="/login"]):not([href="/signup"]):hover {
+  color: var(--golden-yellow) !important;
+}
+
+/* Auth buttons - allow Tailwind hover classes to work */
+nav a[href="/login"],
+nav a[href="/signup"] {
+  transition: all 0.3s ease;
+}
+
+/* Active nav link color */
+nav a.text-golden-yellow {
+  color: var(--golden-yellow) !important;
+}
+
+/* Fix Bootstrap icon colors in buttons - inherit from parent */
+nav a i.bi {
+  color: inherit !important;
+  transition: color 0.3s ease;
+}
+
+nav button i.bi {
+  color: inherit !important;
+}
+
+/* Auth button hover styles - must come after inherit rule */
+nav a[href="/login"]:hover,
+nav a[href="/login"]:hover * {
+  color: #3A4A1C !important;
+  background-color: var(--golden-yellow);
+}
